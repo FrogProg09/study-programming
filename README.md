@@ -1,5 +1,5 @@
 # study-programming
-Repository for my journey of learning programming (cpp for example)
+Repository of my journey learning programming (cpp for example)
 
 ### Structure of this repo.
 
