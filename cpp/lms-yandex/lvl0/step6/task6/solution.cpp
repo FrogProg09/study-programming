@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -8,12 +9,12 @@ int main(){
 
     // Дистанция: Количество шагов по таблице ASCII, которое разделяет эти два символа.
 
-    int distance = (int)symbolRegEnd - (int)symbolRegBeg;
+    int distanceUnprocessed = (int)symbolRegEnd - (int)symbolRegBeg;
+    int distance = abs(distanceUnprocessed);
 
     // Центральный символ: Символ, который находится ровно посередине между начальным и конечным.
 
-    int middle = distance /  2;
-    char symbolMiddle = (int)symbolRegBeg + middle;
+    char symbolMiddle = ((int)symbolRegBeg + (int)symbolRegEnd) /  2;
 
     // Вывод
 
